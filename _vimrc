@@ -53,6 +53,7 @@ set ai! "设置自动缩进
 set cursorline	"启用光标行
 set guicursor+=a:blinkon0 "设置光标不闪烁
 set fdm=indent "
+set number
 
 "设置文件的代码形式 utf8
 set encoding=utf-8
@@ -76,6 +77,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 filetype plugin indent on    " required
