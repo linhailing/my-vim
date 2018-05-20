@@ -80,6 +80,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'mattn/emmet-vim'
+Plugin 'Shougo/neocomplcache.vim'
 
 call vundle#end()
 filetype plugin indent on    " required
@@ -152,4 +154,29 @@ function MyDiff()
 endfunction
 
 " config key
+let mapleader=","
 imap jj <Esc>
+nmap <leader>v "+gp
+nmap <leader>c "+y
+
+" mattn/emmet-vim
+let g:user_emmet_mode='n'    "only enable normal mode functions.
+let g:user_emmet_mode='inv'  "enable all functions, which is equal to
+let g:user_emmet_mode='a'    "enable all function in all mode.
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,js EmmetInstall
+let g:user_emmet_leader_key='<leader>e'
+
+
+let g:neocomplcache_enable_at_startup = 1
+
+
+" 设置缩进
+" 设置expandtab:
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2 "设置缩进宽度 
+set cindent "启用cindent缩进结构 
+set autoindent "启用autoindent缩进结构 
+set smartindent "启用smartindent缩进结构
