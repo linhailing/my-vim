@@ -1,11 +1,11 @@
 set nocompatible
-filetype off
+filetype on
 "colorscheme evening	"配色方案
 colorscheme desert
 set helplang=cn		"设置中文帮助
 set history=500		"保留历史记录
 set guifont=Monaco:h10	"设置字体为Monaco，大小10
-set tabstop=4		"设置tab的跳数
+set tabstop=2		"设置tab的跳数
 set expandtab
 set backspace=2 	"设置退格键可用
 "set nu! 		"设置显示行号
@@ -61,6 +61,9 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
+"set guifont=source_code_pro:h14:b:cDEFAULT
+set guifont=Courier_new:h14:b:cDEFAULT
+
 
 "vim的菜单乱码解决
 source $VIMRUNTIME/delmenu.vim
@@ -82,6 +85,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 filetype plugin indent on    " required
